@@ -165,6 +165,5 @@ int main ()
 	else
 		printf ("ERROR\n");
 
-	system ("PAUSE");
 	return 0;
 }
