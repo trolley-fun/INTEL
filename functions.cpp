@@ -409,6 +409,8 @@ char * long_multiplicate (const char * numb1, const char * numb2)
 	{
 		assert ((0 <= i) && (i < len1 + len2));
 		assert ((0 <= len_f - 1 - i) && (len_f - 1 - i < len1 + len2));
+		assert (('0' <= func [i]) && (func [i] <= '9'));
+		assert (('0' <= func [len_f - 1 - i]) && (func [len_f - 1 - i] <= '9'));
 
 		k = func [i];
 		func [i] = func [len_f - 1 - i];
@@ -523,6 +525,8 @@ char * long_sum (const char * numb1, const char * numb2)
 	{
 		assert ((0 <= i) && (i < len_f));
 		assert ((0 <= len_f - i - 1) && (len_f - i - 1 < len_f));
+		assert (('0' <= func [i]) && (func [i] <= '9'));
+		assert (('0' <= func [len_f - i - 1]) && (func [len_f - i - 1] <= '9'));
 
 		k = func [i];
 		func [i] = func [len_f - i - 1];
