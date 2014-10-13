@@ -45,7 +45,7 @@ mas_of_numb del_repeated_2 (const long int input_count, const long int * input_n
 		assert ((0 <= i) && (i < input_count));
 		assert ((1 <= input_numb [i]) && (input_numb [i] < 1000));
 
-		num_meet [input_numb [i] - 1]++;  //count of meeting this number
+		num_meet [input_numb [i] - 1]++;                       //count of meeting this number
 
 		if (num_meet [input_numb [i] - 1] == 1)
 			num_unrepeated++;
@@ -272,7 +272,7 @@ table_of_numb fill_snakely (const long int size_col, const long int size_str)
 
 	for (long int diag = 0; diag <= size_str + size_col - 2; diag++)  // diag is nummer of diagonal
 	{
-		str0 = diag - size_col + 1;  //str0 is the least nummer of string in this diagonal
+		str0 = diag - size_col + 1;                               //str0 is the least nummer of string in this diagonal
 		if (str0 < 0)
 			str0 = 0;
 
@@ -281,7 +281,7 @@ table_of_numb fill_snakely (const long int size_col, const long int size_str)
 			assert ((0 <= str) && (str < size_str));  
 			assert ((0 <= col) && (col < size_col));
 			
-			col = diag - str;  //str is nummer of string, col is nummer of column
+			col = diag - str;                                 //str is nummer of string, col is nummer of column
 			numb++;
 			func.numbers [str] [col] = numb;
 		}
