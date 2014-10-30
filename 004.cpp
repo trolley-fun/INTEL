@@ -13,8 +13,8 @@
 
 typedef struct
 {
-	int num,        //kolichestvo korney
-		errcode;    //0 = OK, 1 = ERROR
+	int num,                                //kolichestvo korney
+		errcode;                        //0 = OK, 1 = ERROR
 	double x1, x2;
 }
 radicals;
@@ -23,7 +23,7 @@ radicals;
 typedef struct
 {
 	int errcode;
-	double number[3]; //koeffizienti uravneniya (a, b, c)
+	double number[3];                       //koeffizienti uravneniya (a, b, c)
 }
 remake;
 
@@ -31,8 +31,8 @@ remake;
 const int INFINITY = -1;
 
 
-remake str_to_doub (const char* abc)   //proverka vhodnyh dannyh
-{                                      //v abc nahodyatza a, b, c cherez probel 
+remake str_to_doub (const char* abc)           //proverka vhodnyh dannyh
+{                                              //v abc nahodyatza a, b, c cherez probel 
 	remake st_doub = {0, {0, 0, 0}};
 	int len = 0, 
 		num_point = 0,   //kolichestvo tochek v chisle
