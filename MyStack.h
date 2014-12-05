@@ -21,8 +21,8 @@ typedef struct Stk_element
 typedef struct Stack_t
 {
 	Stk_element * head;				//pointer to last element
-	int count;						//count of elements in stack
-	double AX;						//registers
+	int count;					//count of elements in stack
+	double AX;					//registers
 	double BX;
 	double CX;
 };
