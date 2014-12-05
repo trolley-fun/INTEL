@@ -604,8 +604,8 @@ double Stk_popCX (Stack_t * stk0)
 //function Stk_cmp compare 2 last elements in stack
 //X is last element, X and Y are 2 last elements
 //then	if X<Y function return -1
-//		if X=Y function return  0
-//		if X>Y function return  1
+//	if X=Y function return  0
+//	if X>Y function return  1
 
 int Stk_cmp (Stack_t * stk0)
 {
